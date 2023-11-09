@@ -25,7 +25,7 @@ Very good = 22.40,
 Premium = 25.57,
 Ideal = 39.95
 
-![Rplot](https://github.com/viluuu/Insights-from-data-DNK-3621420-3004/assets/101949309/64a2c36b-2623-4208-bcf3-3b3eb75fd391)
+![Alt text](Rplot.png)
 
 ## Exercise 2
 
@@ -40,8 +40,7 @@ diamonds_larger_than_3 = diamonds[diamonds$carat > 3,]
 # Print number of rows (Amount of diamonds with carat larger than 3)
 print(nrow(diamonds_larger_than_3))
 ```
-
-![Rplot01](https://github.com/viluuu/Insights-from-data-DNK-3621420-3004/assets/101949309/04665c5c-92fc-4dc3-8cfe-26da0e53f479)
+![Alt text](Rplot01.png)
 
 ## Exercise 3
 
@@ -51,7 +50,8 @@ summary(diamonds$y)
 summary(diamonds$z)
 
 ```
-![Screenshot 2023-11-09 at 13 04 45](https://github.com/viluuu/Insights-from-data-DNK-3621420-3004/assets/101949309/dcd5dd25-a0da-480f-8367-b71dd17bb6e8)
+
+![Alt text](<Screenshot 2023-11-09 at 13.36.02.png>)
 
 ``` R
 # Histograms. I found package gridExtra to display all side by side. 
@@ -65,7 +65,7 @@ h3 <- ggplot(diamonds, aes(x = z)) + geom_histogram(fill = "red") + ggtitle("z")
 
 grid.arrange(h1, h2, h3, ncol = 3)
 ```
-![Rplot03](https://github.com/viluuu/Insights-from-data-DNK-3621420-3004/assets/101949309/a5e73572-7f12-46f4-9762-f3a51b840c83)
+![Alt text](Rplot03.png)
 
 ``` R
 # Boxplots
@@ -76,7 +76,7 @@ b3 <- ggplot(diamonds, aes(x = "x", y = z)) + geom_boxplot(fill = "red") + ggtit
 
 grid.arrange(b1, b2, b3, ncol = 3)
 ```
-![Rplot04](https://github.com/viluuu/Insights-from-data-DNK-3621420-3004/assets/101949309/5f0241ce-f592-404f-af15-5d18ed8efa1d)
+![Alt text](Rplot04.png)
 
 ### Answer: 
 There are multiple 0 values. 0 values are propapbly mistakes because 0 value is not possible. 
