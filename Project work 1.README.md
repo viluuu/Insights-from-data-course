@@ -81,3 +81,17 @@ grid.arrange(b1, b2, b3, ncol = 3)
 ### Answer: 
 There are multiple 0 values. 0 values are propapbly mistakes because 0 value is not possible. 
 Distribution of variables seems normal, but there are couple outliers and outliers should be investigated to determine if they are errors. If they are errors , they should be corrected or removed. 
+
+## Exercise 4 
+
+```R 
+# Histogram, binwidth = 30
+ggplot(diamonds, aes(price)) + geom_histogram(binwidth = 30)
+```
+![Alt text](images/Rplot05.png)
+
+```R
+# Lets focus on that cap around 1000 & 2000
+ggplot(diamonds, aes(price)) + geom_histogram(binwidth = 30) + xlim(1000, 2000)
+```
+
